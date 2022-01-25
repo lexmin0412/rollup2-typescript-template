@@ -1,6 +1,7 @@
 import resolve from '@rollup/plugin-node-resolve';
 import commonjs from '@rollup/plugin-commonjs';
 import typescript from '@rollup/plugin-typescript';
+import filesize from 'rollup-plugin-filesize'
 import pkg from './package.json';
 
 export default [
@@ -18,8 +19,9 @@ export default [
 		],
 		plugins: [
 			typescript(), // typescript支持
-			resolve(), // so Rollup can find `ms`
-			commonjs() // so Rollup can convert `ms` to an ES module
+			resolve(), // 解析node_modules中的依赖
+			commonjs(), // 将commonjs规范的库转换为es module
+			filesize() // 打包之后展示文件体积
 		]
 	}
 ];

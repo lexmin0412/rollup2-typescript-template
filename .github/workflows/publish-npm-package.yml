@@ -19,9 +19,9 @@ jobs:
           version: 6.0.2
       - run: pnpm i
       - run: pnpm run build
-      - run: pnpm publish --access public
-        env:
-          NODE_AUTH_TOKEN: ${{secrets.npm_token}}
+      # - run: pnpm publish --access public
+      #   env:
+      #     NODE_AUTH_TOKEN: ${{secrets.npm_token}}
       - uses: geeman201/conventional-changelog-npm-publish/@v14
         env:
           NODE_AUTH_TOKEN: ${{ secrets.ACCESS_TOKEN }}

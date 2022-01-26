@@ -1,4 +1,4 @@
-# rollup-starter-lib
+# rollup2 + typescript 类库模版
 
 [![Greenkeeper badge](https://badges.greenkeeper.io/rollup/rollup-starter-lib.svg)](https://greenkeeper.io/)
 

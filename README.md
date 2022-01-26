@@ -1,13 +1,15 @@
-# rollup2 + typescript 类库模版
+# rollup2 + typescript 项目模板
 
 [![Greenkeeper badge](https://badges.greenkeeper.io/rollup/rollup-starter-lib.svg)](https://greenkeeper.io/)
 
-This repo contains a bare-bones example of how to create a library using Rollup, including importing a module from `node_modules` and converting it from CommonJS.
+> 此项目基于 [rollup-starter-lib](https://github.com/rollup/rollup-starter-lib) 扩展。
 
-We're creating a library called `how-long-till-lunch`, which usefully tells us how long we have to wait until lunch, using the [ms](https://github.com/zeit/ms) package:
+此仓库包含了使用 Rollup 创建一个库的简单示例，包括从 `node_modules` 中导入模块并将其从 CommonJS 转换为 ES Module.
+
+我们将会创建一个名为 `how-long-till-lunch` 的库，这里使用了 [ms](https://github.com/zeit/ms) 这个包，它可以我们告诉我们距离下一次午餐还有多久。
 
 ```js
-console.log('it will be lunchtime in ' + howLongTillLunch());
+console.log('距离下一顿午饭还有 ' + howLongTillLunch());
 ```
 
 ## Getting started
